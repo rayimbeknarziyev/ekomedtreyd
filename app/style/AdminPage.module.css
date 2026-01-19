@@ -1,0 +1,435 @@
+.loginContainer {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 20px;
+  }
+  
+  .loginCard {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .loginTitle {
+    color: #1e293b;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+  
+  .loginSubtitle {
+    color: #64748b;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 8px;
+    color: #475569;
+    font-weight: 500;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #f8fafc;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  }
+  
+  .loginButton {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .loginButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+  }
+  
+  .loginFooter {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f1f5f9;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 14px;
+    color: #64748b;
+  }
+  
+  .loginFooter p {
+    margin: 5px 0;
+  }
+  
+  /* Admin Panel Styles */
+  .adminContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .adminHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .adminHeader h1 {
+    color: #1e293b;
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .adminNav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .navLink {
+    padding: 10px 20px;
+    background: #f1f5f9;
+    color: #475569;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .navLink:hover {
+    background: #3b82f6;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .logoutButton {
+    padding: 10px 20px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .logoutButton:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 30px;
+  }
+  
+  .creationCard {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modeSelector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .modeButton {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #e2e8f0;
+    background: white;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .modeButton.active {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    color: white;
+    border-color: transparent;
+  }
+  
+  .sectionLabel {
+    display: block;
+    margin-bottom: 12px;
+    color: #475569;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .textarea {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 150px;
+    background: #f8fafc;
+    transition: all 0.3s ease;
+  }
+  
+  .textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  }
+  
+  .charCount {
+    text-align: right;
+    margin-top: 8px;
+    color: #64748b;
+    font-size: 14px;
+  }
+  
+  .fileUpload {
+    margin-bottom: 20px;
+  }
+  
+  .fileInput {
+    display: none;
+  }
+  
+  .fileLabel {
+    display: block;
+    padding: 20px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    text-align: center;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #f8fafc;
+  }
+  
+  .fileLabel:hover {
+    border-color: #3b82f6;
+    background: #f0f9ff;
+  }
+  
+  .browseButton {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 6px 16px;
+    background: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .fileInfo {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 12px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #475569;
+  }
+  
+  .fileNote {
+    font-size: 12px;
+    color: #ef4444;
+    margin-top: 10px;
+  }
+  
+  .createButton {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .createButton:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .createButton:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+  }
+  
+  .qrPreview {
+    margin-top: 30px;
+    padding: 25px;
+    background: #f8fafc;
+    border-radius: 16px;
+    text-align: center;
+  }
+  
+  .qrTitle {
+    color: #1e293b;
+    margin-bottom: 20px;
+  }
+  
+  .qrImageWrapper {
+    display: inline-block;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .qrImage {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .qrActions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .downloadButton,
+  .clearButton {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .downloadButton {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    color: white;
+  }
+  
+  .clearButton {
+    background: #f1f5f9;
+    color: #475569;
+  }
+  
+  .downloadButton:hover,
+  .clearButton:hover {
+    transform: translateY(-2px);
+  }
+  
+  .infoPanel {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    align-self: start;
+    position: sticky;
+    top: 20px;
+  }
+  
+  .guideList {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .guideList li {
+    padding: 10px 0;
+    color: #475569;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .guideList li:before {
+    content: "✓";
+    color: #10b981;
+    font-weight: bold;
+  }
+  
+  .stats {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-radius: 12px;
+  }
+  
+  .dashboardLink {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .dashboardLink:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .content {
+      grid-template-columns: 1fr;
+    }
+    
+    .adminHeader {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+    
+    .adminNav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .modeSelector {
+      flex-direction: column;
+    }
+  }

@@ -1,0 +1,159 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 60px 0;
+  }
+  
+  .featureCard {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .featureCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+  .featureIcon {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .featureCard h3 {
+    color: #1e293b;
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
+  
+  .featureCard p {
+    color: #64748b;
+    line-height: 1.6;
+  }
+  
+  .ctaSection {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-radius: 20px;
+    margin: 40px 0;
+  }
+  
+  .ctaSection h2 {
+    color: #0f172a;
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  
+  .ctaSection p {
+    color: #475569;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .primaryButton,
+  .secondaryButton {
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .primaryButton {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    color: white;
+    border: none;
+  }
+  
+  .primaryButton:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+  }
+  
+  .secondaryButton {
+    background: white;
+    color: #3b82f6;
+    border: 2px solid #3b82f6;
+  }
+  
+  .secondaryButton:hover {
+    background: #3b82f6;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 60px 0;
+    text-align: center;
+  }
+  
+  .statItem {
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+  }
+  
+  .statNumber {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    color: #3b82f6;
+    margin-bottom: 8px;
+  }
+  
+  .statLabel {
+    color: #64748b;
+    font-size: 16px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .features {
+      grid-template-columns: 1fr;
+    }
+    
+    .stats {
+      grid-template-columns: 1fr;
+    }
+    
+    .ctaSection h2 {
+      font-size: 24px;
+    }
+    
+    .buttonGroup {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .primaryButton,
+    .secondaryButton {
+      width: 100%;
+      text-align: center;
+    }
+  }

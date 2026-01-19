@@ -1,0 +1,152 @@
+.header {
+  background: #c1ebff;
+  color: white;
+  padding: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header.adminHeader {
+  background: #c1ebff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+
+.logo a {
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo a:hover {
+  color: #60a5fa;
+}
+
+.desktopNav {
+  display: flex;
+  gap: 25px;
+}
+
+.navLink {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.navLink:hover {
+  color: rgb(0, 0, 0);
+  background:rgba(59, 130, 246, 0.2);
+}
+
+.navLink.active {
+  color: rgb(0, 0, 0);
+  background: rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.5);
+}
+
+
+
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: white;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+  transform: translateY(-8px);
+}
+
+.hamburger::after {
+  transform: translateY(8px);
+}
+
+.mobileNav {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  background: #dcf4ff;
+  padding: 20px;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mobileNavLink {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.mobileNavLink:hover,
+.mobileNavLink.active {
+  color: rgb(0, 0, 0);
+  background: #c1ebff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .desktopNav {
+    display: none;
+  }
+  
+  .mobileMenuButton {
+    display: block;
+  }
+  
+  .mobileMenuButton.active .hamburger {
+    background: transparent;
+  }
+  
+  .mobileMenuButton.active .hamburger::before {
+    transform: rotate(45deg);
+  }
+  
+  .mobileMenuButton.active .hamburger::after {
+    transform: rotate(-45deg);
+  }
+  
+  .mobileNav {
+    display: flex;
+  }
+}

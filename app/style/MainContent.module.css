@@ -1,0 +1,155 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  }
+  
+  .contentCard {
+    max-width: 800px;
+    width: 100%;
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+  }
+  
+  .title {
+    color: #1e293b;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .textContent {
+    padding: 30px;
+    background: #f8fafc;
+    border-radius: 16px;
+    border: 2px solid #e2e8f0;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #334155;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    min-height: 200px;
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+  
+  .imageContainer {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid #e2e8f0;
+    background: #f8fafc;
+    min-height: 300px;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .image:hover {
+    transform: scale(1.02);
+  }
+  
+  .imageOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .noImage {
+    padding: 60px 20px;
+    text-align: center;
+    color: #64748b;
+  }
+  
+  .noImage p:first-child {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ef4444;
+  }
+  
+  .metaInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+  }
+  
+  .metaBadge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .metaBadge {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    color: #1e40af;
+  }
+  
+  .imageBadge {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    color: #92400e;
+  }
+  
+  .metaDate {
+    color: #64748b;
+    font-size: 14px;
+  }
+  
+  .emptyState {
+    text-align: center;
+    padding: 60px 40px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .emptyState h2 {
+    color: #64748b;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .emptyState p {
+    color: #94a3b8;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contentCard {
+      padding: 25px;
+    }
+    
+    .title {
+      font-size: 24px;
+    }
+    
+    .textContent {
+      padding: 20px;
+      font-size: 16px;
+    }
+    
+    .imageContainer {
+      min-height: 200px;
+    }
+  }

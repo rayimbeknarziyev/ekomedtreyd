@@ -1,0 +1,37 @@
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(90deg, #1e293b, #0f172a);
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    border-radius: 12px;
+    margin-bottom: 40px;
+  }
+  
+  .heroTitle {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  
+  .heroText {
+    font-size: 18px;
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 640px) {
+    .hero {
+      padding: 40px 16px;
+    }
+  
+    .heroTitle {
+      font-size: 28px;
+    }
+  
+    .heroText {
+      font-size: 16px;
+    }
+  }
+  
