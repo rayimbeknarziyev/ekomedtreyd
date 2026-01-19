@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../style/Contact.module.css";
+import styles from "../style/Contact.module.css";
 
 export default function ContactPage() {
   return (
@@ -42,25 +42,6 @@ export default function ContactPage() {
             </a>
           </li>
         </ul>
-      </section>
-
-      <section className={styles.formSection}>
-        <h2>📩 Xabar yuborish</h2>
-        <form className={styles.contactForm}>
-          <label>
-            Ism:
-            <input type="text" placeholder="Ismingiz" required />
-          </label>
-          <label>
-            Email:
-            <input type="email" placeholder="Emailingiz" required />
-          </label>
-          <label>
-            Xabar:
-            <textarea placeholder="Xabaringiz..." required></textarea>
-          </label>
-          <button type="submit">Yuborish</button>
-        </form>
       </section>
     </main>
   );
