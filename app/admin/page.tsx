@@ -8,8 +8,8 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import styles from "../style/AdminPage.module.css";
 
-const ADMIN_EMAIL = "admin@gmail.com";
-const ADMIN_PASSWORD = "admin1234";
+const ADMIN_EMAIL = "ekomed@gmail.com";
+const ADMIN_PASSWORD = "20200101";
 
 // Fayl nomini tozalash funksiyasi
 function sanitizeFileName(filename: string): string {
@@ -223,7 +223,7 @@ export default function AdminPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className={styles.input}
-                placeholder="admin@gmail.com"
+                placeholder="email kiriting"
                 required
               />
             </div>
@@ -235,7 +235,7 @@ export default function AdminPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className={styles.input}
-                placeholder="admin1234"
+                placeholder="parol kiriting"
                 required
               />
             </div>
@@ -245,15 +245,6 @@ export default function AdminPage() {
             </button>
           </form>
 
-          <div className={styles.loginFooter}>
-            <p>Demo malumotlar:</p>
-            <p>
-              Email: <strong>admin@gmail.com</strong>
-            </p>
-            <p>
-              Parol: <strong>admin1234</strong>
-            </p>
-          </div>
         </div>
       </main>
     );
