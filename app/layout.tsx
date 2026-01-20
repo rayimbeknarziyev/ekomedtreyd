@@ -22,7 +22,7 @@ export const metadata = {
     type: "website",
   },
   verification: {
-    google: "d18162a241b294ad", // 🔹 Google Search Console kodi shu yerga
+    google: "XX47B1i_phjPjrXVTC2tt_9Vq-9v0RBj5u4yxvHhjy0", // 🔹 Google Search Console kodi shu yerga
   },
 };
 
