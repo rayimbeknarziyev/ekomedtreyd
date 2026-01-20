@@ -21,6 +21,9 @@ export const metadata = {
     description: "Tibbiy uskunalar va med texnika bo‘yicha ishonchli hamkor.",
     type: "website",
   },
+  verification: {
+    google: "d18162a241b294ad", // 🔹 Google Search Console kodi shu yerga
+  },
 };
 
 export default function RootLayout({
