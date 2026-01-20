@@ -4,9 +4,9 @@ import Footer from "./components/Footer";
 import "./globals.css";
 
 export const metadata = {
-  title: "Eko Med Treyd | Tibbiy uskunalar va med texnika",
+  title: "Eko Med Treyd",
   description:
-    "Eko Med Treyd — tibbiy uskunalar, med texnika va klinikalar uchun zamonaviy va ishonchli yechimlar.",
+    " Eko Med Treyd tomonidan tashkil etiladigan o‘quv kurslari dorixona xodimlarining kasbiy malakasini oshirishga qaratilgan.",
   keywords: [
     "eko med",
     "med treyd",
