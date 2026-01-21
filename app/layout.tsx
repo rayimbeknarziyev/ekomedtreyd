@@ -17,15 +17,11 @@ export const metadata = {
   ],
   authors: [{ name: "Eko Med Treyd" }],
 
-  icons: {
-    icon: "/logo.png", // 🔥 FAVICON SHU YERDA
-  },
-
   openGraph: {
     title: "Eko Med Treyd",
     description: "Tibbiy uskunalar va med texnika bo‘yicha ishonchli hamkor.",
     type: "website",
-    images: ["/logo.png"], // (ixtiyoriy, lekin yaxshi)
+    images: ["/logo.png"],
   },
 
   verification: {
