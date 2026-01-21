@@ -6,7 +6,7 @@ import "./globals.css";
 export const metadata = {
   title: "Eko Med Treyd",
   description:
-    " Eko Med Treyd tomonidan tashkil etiladigan o‘quv kurslari dorixona xodimlarining kasbiy malakasini oshirishga qaratilgan.",
+    "Eko Med Treyd tomonidan tashkil etiladigan o‘quv kurslari dorixona xodimlarining kasbiy malakasini oshirishga qaratilgan.",
   keywords: [
     "eko med",
     "med treyd",
@@ -16,13 +16,20 @@ export const metadata = {
     "medical equipment",
   ],
   authors: [{ name: "Eko Med Treyd" }],
+
+  icons: {
+    icon: "/logo.png", // 🔥 FAVICON SHU YERDA
+  },
+
   openGraph: {
     title: "Eko Med Treyd",
     description: "Tibbiy uskunalar va med texnika bo‘yicha ishonchli hamkor.",
     type: "website",
+    images: ["/logo.png"], // (ixtiyoriy, lekin yaxshi)
   },
+
   verification: {
-    google: "XX47B1i_phjPjrXVTC2tt_9Vq-9v0RBj5u4yxvHhjy0", // 🔹 Google Search Console kodi shu yerga
+    google: "XX47B1i_phjPjrXVTC2tt_9Vq-9v0RBj5u4yxvHhjy0",
   },
 };
 
