@@ -21,7 +21,6 @@ export const metadata = {
     title: "Eko Med Treyd",
     description: "Tibbiy uskunalar va med texnika bo‘yicha ishonchli hamkor.",
     type: "website",
-    images: ["/logo.png"],
   },
 
   verification: {
