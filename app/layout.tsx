@@ -7,6 +7,7 @@ export const metadata = {
   title: "Eko Med Treyd",
   description:
     "Eko Med Treyd tomonidan tashkil etiladigan o‘quv kurslari dorixona xodimlarining kasbiy malakasini oshirishga qaratilgan.",
+
   keywords: [
     "eko med",
     "med treyd",
@@ -15,12 +16,20 @@ export const metadata = {
     "med texnika",
     "medical equipment",
   ],
+
   authors: [{ name: "Eko Med Treyd" }],
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 
   openGraph: {
     title: "Eko Med Treyd",
     description: "Tibbiy uskunalar va med texnika bo‘yicha ishonchli hamkor.",
     type: "website",
+    images: ["/favicon.ico"],
   },
 
   verification: {
